@@ -38,6 +38,15 @@ int main()
     // Capacità
     bool empty = myList.empty(); // Verifica se la lista è vuota
     std::size_t size = myList.size(); // Restituisce il numero di elementi nella lista
+
+    int lunghezza = myList.size();
+
+    std::cout << size << endl;
+    std::cout << lunghezza << endl;
+
+    std::cout << myList.max_size() << endl;
+
+    //
     myList.resize(10); // Ridimensiona la lista a 10 elementi (troncando o aggiungendo elementi)
     myList.resize(10, 5); // Ridimensiona a 10 elementi, aggiungendo elementi di valore 5 se necessario
 

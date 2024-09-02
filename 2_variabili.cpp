@@ -11,22 +11,23 @@ int main()
     
     float valore = 3.14f;
     double pi = 3.14159265359;
-    
-    char carattere = 'A';
-    bool isTrue = true;
 
-    std::string nome = "Alice";
+    // Occhio alla somma tra tipi diversi
+    short somma = numero + popolazione;
+    cout << somma << endl;
+    
+    // 
+    char carattere = 'A';
+    bool isTrue = false;
 
     // If else
     bool condizione = true;
 
     // Stringhe
-    string female = "Alice";
     string saluto = "Ciao, ";
-    int numero_10 = 50;
-    string messaggio;
+    string nome = "Alice";
 
     // Concatenazione di stringhe
-    messaggio = saluto + female;  
-    cout << messaggio << std::endl;
+    string messaggio = saluto + nome;
+    cout << messaggio << endl;
 }

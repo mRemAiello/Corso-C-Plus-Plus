@@ -6,12 +6,14 @@ int main()
     // int numeri[10];
 
     // Array
-    int numero = 5;
+    // int numero = 5;
     int numeri[] = {1, 2, 3, 4, 5};
-    std::cout << numeri[1] << std::endl;
+    //std::cout << numeri[1] << std::endl;
 
     // Calcolo lunghezza
     int length = sizeof(numeri) / sizeof(int);
+    std::cout << sizeof(numeri) << std::endl;
+    std::cout << sizeof(int) << std::endl;
     std::cout << "Lunghezza: " << length << std::endl;
 
     // Foreach
