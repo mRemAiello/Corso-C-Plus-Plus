@@ -51,24 +51,24 @@ class CocaCola
 
 
 template <typename T>
-class Contenitore 
+class Contenitore
 {
     private:
-    T content;
+    T _contenuto;
     string description;
 
     public:
     // Costruttore
-    Contenitore(T c, string d)
+    Contenitore(T contenuto, string d)
     {
-        content = c;
+        _contenuto = contenuto;
         description = d;
     }
 
     // Metodo per ottenere il contenuto
     T getContent()
     {
-        return content;
+        return _contenuto;
     }
 
     string getDescription()
@@ -78,7 +78,7 @@ class Contenitore
 
     void setContent(T newContent) 
     {
-        content = newContent;
+        _contenuto = newContent;
     }
 
     // Metodo per impostare la descrizione
@@ -90,14 +90,16 @@ class Contenitore
     // Metodo per stampare le informazioni del contenitore
     void printInfo()
     {
-        std::cout << "Descrizione: " << description << ", Contenuto: " << content.getType() << std::endl;
+        std::cout << "Descrizione: " << description << ", Contenuto: " << _contenuto.getType() << std::endl;
     }
 };
 
 int main() 
 {
+    Acqua acqua = Acqua();
+
     // Esempi di utilizzo della classe generica Container con classi specifiche
-    Contenitore<Acqua> waterBottle(Acqua(), "Bottiglia di acqua");
+    Contenitore<Acqua> waterBottle(acqua, "Bottiglia di acqua");
     Contenitore<Vino> wineBottle(Vino(), "Bottiglia di vino");
     Contenitore<Olio> oilBottle(Olio(), "Bottiglia di olio");
     Contenitore<Petrolio> oilBarrel(Petrolio(), "Barile di petrolio");

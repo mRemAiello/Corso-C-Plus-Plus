@@ -3,6 +3,7 @@ class ClasseBase
     public:
     int attributo_base;
 
+    protected:
     void metodo_base() 
     {
         // Codice del metodo base
@@ -31,6 +32,7 @@ class ClasseDerivata : public ClasseBase, public ClasseBase2, public ClasseBase3
     {
         attributo_base = 0;
         // Codice del metodo derivato
+        metodo_base();
     }
 };
 
@@ -41,7 +43,7 @@ int main()
 
     oggetto.attributo_base = 42; // Accesso all'attributo della classe base
     
-    oggetto.metodo_base(); // Chiamata al metodo della classe base
+    //oggetto.metodo_base(); // Chiamata al metodo della classe base
     
     oggetto.attributo_derivato = 10; // Accesso all'attributo della classe derivata
     oggetto.metodo_derivato(); // Chiamata al metodo della classe derivata

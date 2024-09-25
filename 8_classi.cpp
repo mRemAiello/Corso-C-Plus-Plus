@@ -5,40 +5,40 @@ using namespace std;
 class Automobile
 {
     private:
-    string marca;
-    string modello;
-    int anno;
+    string _marca;
+    string _modello;
+    int _anno;
 
     public:
     // Costruttore con parametri
-    Automobile(string m, string mod, int a)
+    Automobile(string marca, string mod, int a)
     {
-        marca = m;
-        modello = mod;
-        anno = a;
+        _marca = marca;
+        _modello = mod;
+        _anno = a;
     }
 
     Automobile(string m, int a)
     {
-        marca = m;
-        anno = a;
-        modello = "Sconosciuto";
+        _marca = m;
+        _anno = a;
+        _modello = "Sconosciuto";
     }
 
     // Costruttore predefinito senza parametri
     Automobile()
     {
-        marca = "Sconosciuta";
-        modello = "Sconosciuto";
-        anno = 0;
+        _marca = "Sconosciuta";
+        _modello = "Sconosciuto";
+        _anno = 0;
     }
 
     void mostraInformazioni() 
     {
-        std::cout << "Marca: " << marca << endl;
-        std::cout << "Modello: " << modello << endl;
-        std::cout << "Anno: " << anno << endl;
-        std::cout << endl;
+        cout << "Marca: " << _marca << endl;
+        cout << "Modello: " << _modello << endl;
+        cout << "Anno: " << _anno << endl;
+        cout << endl;
     }
 };
 

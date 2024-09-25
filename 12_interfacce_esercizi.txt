@@ -1,0 +1,22 @@
+Esercizi
+
+    Estendi l'interfaccia
+    Aggiungi un nuovo metodo puro virtuale all'interfaccia IFormaGeometrica, chiamato descrizione(), 
+    che restituisce una stringa con la descrizione della forma. Implementa questo metodo nelle classi Rettangolo e Cerchio.
+
+    Aggiungi una nuova classe
+    Implementa una nuova classe chiamata Triangolo che deriva da IFormaGeometrica. Il triangolo avrà come attributi la base e l'altezza. 
+    Implementa i metodi per calcolare l'area e il perimetro. Considera che per il perimetro avrai bisogno di altri due lati.
+
+    Polimorfismo
+    Scrivi una funzione chiamata stampaInformazioniForma() che accetta un puntatore a un oggetto IFormaGeometrica 
+    e stampa l'area e il perimetro della forma passata. Usa questa funzione nel main() per stampare le informazioni di diverse forme.
+
+    Array di forme
+    Crea un array di puntatori a oggetti IFormaGeometrica che contiene oggetti di tipo Rettangolo, Cerchio e Triangolo. 
+    Usa un ciclo per stampare l'area e il perimetro di tutte le forme presenti nell'array.
+
+    Modifica dei parametri
+    Modifica la classe Rettangolo per permettere di cambiare larghezza e altezza dopo la creazione dell'oggetto. 
+    Aggiungi dei metodi setLarghezza(double) e setAltezza(double) e verifica che i nuovi valori siano applicati correttamente 
+    al calcolo dell'area e del perimetro.
