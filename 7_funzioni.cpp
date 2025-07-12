@@ -21,6 +21,7 @@ int somma(double x, double y)
 
 int main()
 {
+    // TODO: Implementare la sottrazione
     int x = 5;
     int y = 3;
     string nome = "Mirko";

@@ -1,6 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
 class ClasseBase 
 {
     public:
+    string nome;
     int attributo_base;
 
     protected:
@@ -13,13 +18,11 @@ class ClasseBase
 
 class ClasseBase2
 {
-
 };
 
 
 class ClasseBase3
 {
-
 };
 
 
@@ -47,4 +50,6 @@ int main()
     
     oggetto.attributo_derivato = 10; // Accesso all'attributo della classe derivata
     oggetto.metodo_derivato(); // Chiamata al metodo della classe derivata
+
+    oggetto.nome = "Ciao";
 }

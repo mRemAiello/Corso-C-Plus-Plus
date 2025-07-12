@@ -19,7 +19,6 @@ int main()
     }
     cout << std::endl;
 
-    // 
     myList.push_back(10); // Inserisce un elemento alla fine
     myList.push_front(20); // Inserisce un elemento all'inizio
     myList.insert(it, 30); // Inserisce un elemento in una posizione specifica (it è un iteratore)
@@ -36,6 +35,13 @@ int main()
     myList.pop_back(); // Rimuove l'ultimo elemento
     myList.pop_front(); // Rimuove il primo elemento
     myList.erase(it); // Rimuove l'elemento alla posizione it
+
+    // Iterare e stampare gli elementi
+    for (int n : myList)
+    {
+        cout << n << " ";
+    }
+    cout << endl;
     
     auto it1 = myList.begin();
     auto it2 = myList.begin();

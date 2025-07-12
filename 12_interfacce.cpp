@@ -1,7 +1,7 @@
 #include <iostream>
 
 // Definizione di un'interfaccia per una forma geometrica
-class IFormaGeometrica 
+class IFormaGeometrica
 {
 public:
     // Metodo puro virtuale per calcolare l'area
@@ -12,7 +12,9 @@ public:
 
     // Distruttore virtuale
     virtual ~IFormaGeometrica() {}
+
 };
+
 
 // Implementazione della classe Rettangolo che deriva da IFormaGeometrica
 class Rettangolo : public IFormaGeometrica 
@@ -22,14 +24,24 @@ private:
     double altezza;
 
 public:
-    Rettangolo(double l, double h) : larghezza(l), altezza(h) {}
+    Rettangolo(double l, double h) 
+    {
+        larghezza = l;
+        altezza = h;
+    }
 
-    double calcolaArea() const override {
+    double calcolaArea() const override 
+    {
         return larghezza * altezza;
     }
 
-    double calcolaPerimetro() const override {
+    double calcolaPerimetro() const override 
+    {
         return 2 * (larghezza + altezza);
+    }
+
+    void funzioneNuova()
+    {
     }
 };
 
@@ -40,14 +52,19 @@ private:
     double raggio;
 
 public:
-    Cerchio(double r) : raggio(r) {}
-
-    double calcolaArea() const override {
-        return 3.14159 * raggio * raggio;
+    Cerchio(double r) 
+    {
+        raggio = r;
     }
 
-    double calcolaPerimetro() const override {
-        return 2 * 3.14159 * raggio;
+    double calcolaArea() const override 
+    {
+        return 3.14 * raggio * raggio;
+    }
+
+    double calcolaPerimetro() const override 
+    {
+        return 2 * 3.14 * raggio;
     }
 };
 
