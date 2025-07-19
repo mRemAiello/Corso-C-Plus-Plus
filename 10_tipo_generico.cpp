@@ -50,7 +50,7 @@ class CocaCola
 };
 
 
-template <typename T>
+template <typename T> 
 class Contenitore
 {
     private:

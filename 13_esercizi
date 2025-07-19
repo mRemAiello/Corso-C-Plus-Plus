@@ -1,0 +1,36 @@
+Dichiara una variabile intera chiamata x con valore 25. Crea un puntatore che punta a x e stampa:
+
+    Il valore di x
+    L’indirizzo di x
+    Il valore puntato dal puntatore
+
+
+Dichiara una variabile int y = 10, crea un puntatore che la punti e 
+cambia il valore di y in 50 utilizzando solo il puntatore. Stampa il nuovo valore di y.
+
+
+Scrivi un programma che:
+
+    Dichiara due variabili intere a = 5 e b = 10
+    Usa due puntatori per puntare a a e b
+    Somma i valori usando la dereferenziazione dei puntatori
+    Stampa il risultato della somma
+
+
+Scrivi una funzione:
+void scambia(int* x, int* y);
+Nel main, chiedi all’utente due numeri interi, chiama la funzione scambia() e stampa i valori invertiti.
+
+
+Dichiara un array di 5 elementi {1, 2, 3, 4, 5}. Usa un puntatore per:
+
+    Stampare tutti gli elementi dell’array
+    Incrementare ciascun elemento di 1
+    Stampare l’array aggiornato
+
+
+Chiedi all’utente la dimensione di un array.
+Usa new per creare l’array dinamicamente.
+Fai inserire i valori all’utente.
+Calcola la media dei numeri inseriti.
+Libera la memoria con delete[].
